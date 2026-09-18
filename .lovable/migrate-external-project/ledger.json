@@ -1,0 +1,14 @@
+{
+  "source": "https://luislazaro12319.github.io/demos/machupicchu-restaurant/",
+  "capabilities": [
+    {"capability":"Static restaurant website","source":"Published GitHub Pages site","outcome":"Rebuild with improved visual design","status":"in_progress","next_action":"Implement and verify responsive preview"},
+    {"capability":"Daily menu","source":"Day-based sample menu in source","outcome":"Preserve","status":"in_progress","next_action":"Verify current-day selection"},
+    {"capability":"Menu categories and cart","source":"Client-side JavaScript","outcome":"Preserve","status":"in_progress","next_action":"Verify add, subtract, and totals"},
+    {"capability":"WhatsApp ordering","source":"wa.me/5491139083385","outcome":"Preserve","status":"in_progress","next_action":"Verify prefilled order link"},
+    {"capability":"Phone and location links","source":"Original published site","outcome":"Preserve","status":"in_progress","next_action":"Verify links"},
+    {"capability":"Database and records","source":"No database detected","outcome":"Not applicable","status":"verified","next_action":"None"},
+    {"capability":"Authentication and authorization","source":"No authentication detected","outcome":"Not applicable","status":"verified","next_action":"None"},
+    {"capability":"Payments, email, storage, webhooks, schedules, secrets","source":"No providers detected","outcome":"Not applicable","status":"verified","next_action":"None"},
+    {"capability":"Cutover to original GitHub repository","source":"External repository","outcome":"User-managed GitHub sync/export","status":"pending","next_action":"Connect this Lovable project to GitHub or copy the completed files"}
+  ]
+}
