@@ -88,6 +88,8 @@ const dailyMenu = [
   { name: "Cau Cau", description: "Guiso peruano con papas, arvejas y hierbabuena.", price: 6000 },
 ];
 
+const fallbackDailyMenu = { name: "Escabeche de Pollo", description: "Pollo frito con salsa de cebolla, ají y camote.", price: 5900 };
+
 const dayNames = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
 const formatPrice = (price: number) => `$${price.toLocaleString("es-AR")}`;
 
@@ -107,7 +109,7 @@ function RestaurantPage() {
   );
   const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  const today = dailyMenu[dayIndex] ?? dailyMenu[5];
+  const today = dailyMenu[dayIndex] ?? fallbackDailyMenu;
 
   const addItem = (item: MenuItem) => {
     setCart((current) => {
@@ -130,7 +132,6 @@ function RestaurantPage() {
     description: today.description,
     price: today.price,
     category: "POLLOS Y CARNES",
-    image: dayIndex === 3 ? ajiImage : undefined,
   };
 
   const sendOrder = () => {
