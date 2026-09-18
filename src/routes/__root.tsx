@@ -77,31 +77,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dulce Arte — Pastelería artesanal" },
+      { title: "Machupicchu Restaurant" },
       {
         name: "description",
-        content: "Carta de tortas, tartas y postres artesanales con pedidos por WhatsApp.",
+        content: "Auténtica comida peruana en Villa Celina, con pedidos por WhatsApp.",
       },
-      { property: "og:title", content: "Dulce Arte — Pastelería artesanal" },
+      { property: "og:title", content: "Machupicchu Restaurant" },
       {
         property: "og:description",
-        content: "Carta de tortas, tartas y postres artesanales con pedidos por WhatsApp.",
+        content: "Auténtica comida peruana en Villa Celina, con pedidos por WhatsApp.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Karla:wght@400;500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap",
       },
     ],
   }),
@@ -113,7 +112,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="es-AR">
       <head>
         <HeadContent />
       </head>
