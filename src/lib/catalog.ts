@@ -1,0 +1,108 @@
+import laptop from "@/assets/ce-laptop.jpg";
+import pcGamer from "@/assets/ce-pc-gamer.jpg";
+import monitor from "@/assets/ce-monitor.jpg";
+import componentes from "@/assets/ce-componentes.jpg";
+import teclado from "@/assets/ce-teclado.jpg";
+import impresora from "@/assets/ce-impresora.jpg";
+import type { Product } from "./store-config";
+
+/** Precios y modelos son de ejemplo: editalos con tu stock real. */
+export const products: Product[] = [
+  {
+    id: "laptop-hp-i5",
+    name: "Laptop HP 15 Core i5 12va Gen",
+    brand: "HP",
+    category: "Laptops",
+    specs: ["Core i5-1235U", "16 GB RAM DDR4", "SSD 512 GB NVMe", "15.6\" Full HD"],
+    price: 2299,
+    oldPrice: 2599,
+    image: laptop,
+    badge: "Más vendida",
+    stock: true,
+  },
+  {
+    id: "laptop-lenovo-ryzen5",
+    name: "Laptop Lenovo IdeaPad Ryzen 5",
+    brand: "Lenovo",
+    category: "Laptops",
+    specs: ["Ryzen 5 7520U", "8 GB RAM", "SSD 512 GB", "Windows 11"],
+    price: 1899,
+    image: laptop,
+    stock: true,
+  },
+  {
+    id: "pc-gamer-rtx",
+    name: "PC Gamer Ryzen 5 + RTX 3060",
+    brand: "Armada Compueconomía",
+    category: "PC de escritorio",
+    specs: ["Ryzen 5 5600", "RTX 3060 12 GB", "16 GB RAM 3200 MHz", "SSD 1 TB + case RGB"],
+    price: 3899,
+    oldPrice: 4290,
+    image: pcGamer,
+    badge: "Oferta",
+    stock: true,
+  },
+  {
+    id: "pc-oficina",
+    name: "PC de oficina Core i3 + SSD",
+    brand: "Armada Compueconomía",
+    category: "PC de escritorio",
+    specs: ["Core i3-12100", "8 GB RAM", "SSD 480 GB", "Teclado y mouse incluidos"],
+    price: 1290,
+    image: pcGamer,
+    stock: true,
+  },
+  {
+    id: "monitor-24-ips",
+    name: "Monitor 24\" IPS 100 Hz",
+    brand: "Samsung",
+    category: "Monitores",
+    specs: ["24 pulgadas Full HD", "Panel IPS 100 Hz", "HDMI + VGA", "Bordes delgados"],
+    price: 549,
+    oldPrice: 629,
+    image: monitor,
+    stock: true,
+  },
+  {
+    id: "monitor-27-gamer",
+    name: "Monitor gamer 27\" 165 Hz",
+    brand: "LG",
+    category: "Monitores",
+    specs: ["27 pulgadas QHD", "165 Hz / 1 ms", "FreeSync", "DisplayPort + HDMI"],
+    price: 1149,
+    image: monitor,
+    stock: true,
+  },
+  {
+    id: "ssd-1tb",
+    name: "SSD NVMe 1 TB + RAM DDR4 8 GB",
+    brand: "Kingston",
+    category: "Componentes",
+    specs: ["SSD NVMe Gen3 1 TB", "RAM DDR4 8 GB 3200 MHz", "Instalación gratis en tienda"],
+    price: 389,
+    image: componentes,
+    badge: "Upgrade",
+    stock: true,
+  },
+  {
+    id: "kit-teclado-mouse",
+    name: "Kit teclado mecánico + mouse RGB",
+    brand: "Redragon",
+    category: "Accesorios",
+    specs: ["Teclado mecánico switch azul", "Mouse 7200 DPI", "Iluminación RGB", "Cable trenzado"],
+    price: 179,
+    oldPrice: 219,
+    image: teclado,
+    stock: true,
+  },
+  {
+    id: "impresora-multifuncional",
+    name: "Impresora multifuncional con sistema continuo",
+    brand: "Epson",
+    category: "Impresoras",
+    specs: ["Imprime, copia y escanea", "WiFi y app móvil", "Tinta continua original"],
+    price: 899,
+    image: impresora,
+    stock: true,
+  },
+];
